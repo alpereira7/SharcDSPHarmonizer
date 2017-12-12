@@ -74,7 +74,7 @@ void processBlock(unsigned int *block_ptr)
     /* for(i=0;i<NUM_SAMPLES;i++) */
     /* { */
     int num_coeff = 3;
-    float drive_k = 0.5;
+    float drive_k = 0.3;
     float drive = (2 * drive_k) / (1 - drive_k);
     drive = 1;
     float threshold = 5;
