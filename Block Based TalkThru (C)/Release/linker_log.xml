@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Analog Devices/VisualDSP 5.1.2/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Tue Dec 12 07:28:15 2017
+'>
+<MSG id='03378500' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 5563 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (_distortion, ._distortion.end) of size 132 bytes from '.\Release\blockProcess.doj(seg_pmco)'
+Eliminated object (_spiFlag, _spiFlag+0x1) of size 5 bytes from '.\Release\init1835viaSPI.doj(seg_dmda)'
+Eliminated object (_sru_routing_error, _sru_routing_error+0x1) of size 5 bytes from '.\Release\initDAI.doj(seg_dmda)'
+Eliminated object (_i, _i+0x1) of size 5 bytes from '.\Release\initPLL.doj(seg_dmda)'
+Eliminated object (_PCI, ._PCI.end) of size 5 bytes from '.\Release\initSPORT.doj(seg_dmda)'
+Eliminated object (_OFFSET, ._OFFSET.end) of size 5 bytes from '.\Release\initSPORT.doj(seg_dmda)'
+Eliminated object (_TCB_Block_A, ._TCB_Block_A.end) of size 20 bytes from '.\Release\initSPORT.doj(seg_dmda)'
+Eliminated object (_TCB_Block_B, ._TCB_Block_B.end) of size 20 bytes from '.\Release\initSPORT.doj(seg_dmda)'
+Eliminated object (_TCB_Block_C, ._TCB_Block_C.end) of size 20 bytes from '.\Release\initSPORT.doj(seg_dmda)'
+Eliminated object (_InitSPORT, ._InitSPORT.end) of size 294 bytes from '.\Release\initSPORT.doj(seg_pmco)'
+Eliminated object (___lib_setup_runtime_heap, .___lib_setup_runtime_heap.end) of size 18 bytes from 'libc36x.dlb[set_c.doj](seg_pmco)'
+Eliminated object (exponential_data, exponential_data+0xc) of size 60 bytes from 'libc36x.dlb[expf.doj](seg_dmda)'
+Eliminated object (_expf, ._expf.end) of size 288 bytes from 'libc36x.dlb[expf.doj](seg_pmco)'
+Eliminated object (_interruptss, ._interruptss.end) of size 18 bytes from 'libc36x.dlb[interrup.doj](seg_pmco)'
+Eliminated object (_interruptcb, ._interruptcb.end) of size 18 bytes from 'libc36x.dlb[interrup.doj](seg_pmco)'
+Eliminated object (_interruptf, ._interruptf.end) of size 18 bytes from 'libc36x.dlb[interrup.doj](seg_pmco)'
+Eliminated object (_interrupts, ._interrupts.end) of size 18 bytes from 'libc36x.dlb[interrup.doj](seg_pmco)'
+Eliminated object (___lib_ss_int_cntrl, .___lib_ss_int_cntrl.end) of size 144 bytes from 'libc36x.dlb[int_cnss.doj](seg_pmco)'
+Eliminated object (___lib_cb_int_cntrl, .___lib_cb_int_cntrl.end) of size 2178 bytes from 'libc36x.dlb[int_cncbl.doj](seg_pmco)'
+Eliminated object (___lib_faster_int_cntrl, .___lib_faster_int_cntrl.end) of size 312 bytes from 'libc36x.dlb[int_cnfl.doj](seg_pmco)'
+Eliminated object (___lib_super_int_cntrl, .___lib_super_int_cntrl.end) of size 180 bytes from 'libc36x.dlb[int_cnsl.doj](seg_pmco)'
+Eliminated object (__fflush_all, .__fflush_all.end) of size 150 bytes from 'libio.dlb[fflush.doj](seg_pmco)'
+Eliminated object (_fflush, ._fflush.end) of size 78 bytes from 'libio.dlb[fflush.doj](seg_pmco)'
+Eliminated object (_fputc, ._fputc.end) of size 42 bytes from 'libio.dlb[fputc.doj](seg_pmco)'
+Eliminated object (___trunc_ftoi, .___trunc_ftoi.end) of size 90 bytes from 'libc36x.dlb[flt_sprt.doj](seg_pmco)'
+Eliminated object (___dtof, .___dtof.end) of size 60 bytes from 'libc36x.dlb[flt_sprt.doj](seg_pmco)'
+Eliminated object (___floatunssisf2, .___floatunssisf2.end) of size 54 bytes from 'libc36x.dlb[flt_sprt.doj](seg_pmco)'
+Eliminated object (_calloc, ._calloc.end) of size 132 bytes from 'libc36x.dlb[malloc.doj](seg_pmco)'
+Eliminated object (___lib_dtof, .___lib_dtof.end) of size 138 bytes from 'libc36x.dlb[lib_ldtof.doj](seg_pmco)'
+Eliminated object (__heap_install, .__heap_install.end) of size 390 bytes from 'libc36x.dlb[alc_type.doj](seg_pmco)'
+Eliminated object (__heap_lookup_name, .__heap_lookup_name.end) of size 246 bytes from 'libc36x.dlb[alc_type.doj](seg_pmco)'
+Eliminated object (_set_alloc_type, ._set_alloc_type.end) of size 78 bytes from 'libc36x.dlb[alc_type.doj](seg_pmco)'
+Eliminated object (__heap_switch, .__heap_switch.end) of size 36 bytes from 'libc36x.dlb[alc_type.doj](seg_pmco)'
+Eliminated object (___lib_find_heap_number_from_address, .___lib_find_heap_number_from_address.end) of size 306 bytes from 'libc36x.dlb[alc_type.doj](seg_pmco)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

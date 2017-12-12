@@ -11,8 +11,8 @@
 # Makefile resides.
 
 # Supported targets:
-#     Block Based TalkThru_Debug
-#     Block Based TalkThru_Debug_clean
+#     Block Based TalkThru_Release
+#     Block Based TalkThru_Release_clean
 
 # Define this variable if you wish to run this Makefile on a host
 # other than the host that created it and VisualDSP++ may be installed
@@ -31,67 +31,67 @@ VDSP=$(subst $(space),\$(space),$(VDSP_INTERMEDIATE))
 RM=cmd /C del /F /Q
 
 #
-# Begin "Block Based TalkThru_Debug" configuration
+# Begin "Block Based TalkThru_Release" configuration
 #
 
-ifeq ($(MAKECMDGOALS),Block Based TalkThru_Debug)
+ifeq ($(MAKECMDGOALS),Block Based TalkThru_Release)
 
-Block\ Based\ TalkThru_Debug : ./Debug/Block\ Based\ TalkThru.dxe 
+Block\ Based\ TalkThru_Release : ./Release/Block\ Based\ TalkThru.dxe 
 
-Debug/blockProcess.doj :blockProcess.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/stdio.h $(VDSP)/213xx/include/stdio_21xxx.h 
+Release/blockProcess.doj :blockProcess.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/stdio.h $(VDSP)/213xx/include/stdio_21xxx.h $(VDSP)/213xx/include/stdlib.h $(VDSP)/213xx/include/errno.h $(VDSP)/213xx/include/yvals.h $(VDSP)/213xx/include/math.h $(VDSP)/213xx/include/math_21xxx.h 
 	@echo ".\blockProcess.c"
-	$(VDSP)/cc21k.exe -c .\blockProcess.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\blockProcess.doj -MM
+	$(VDSP)/cc21k.exe -c .\blockProcess.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\blockProcess.doj -MM
 
-Debug/init1835viaSPI.doj :init1835viaSPI.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h ad1835.h 
+Release/init1835viaSPI.doj :init1835viaSPI.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h ad1835.h 
 	@echo ".\init1835viaSPI.c"
-	$(VDSP)/cc21k.exe -c .\init1835viaSPI.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\init1835viaSPI.doj -MM
+	$(VDSP)/cc21k.exe -c .\init1835viaSPI.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\init1835viaSPI.doj -MM
 
-Debug/initDAI.doj :initDAI.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/SRU.h $(VDSP)/213xx/include/sru21364.h $(VDSP)/213xx/include/sru21363.h 
+Release/initDAI.doj :initDAI.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/SRU.h $(VDSP)/213xx/include/sru21364.h $(VDSP)/213xx/include/sru21363.h 
 	@echo ".\initDAI.c"
-	$(VDSP)/cc21k.exe -c .\initDAI.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\initDAI.doj -MM
+	$(VDSP)/cc21k.exe -c .\initDAI.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\initDAI.doj -MM
 
-Debug/initPLL.doj :initPLL.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
+Release/initPLL.doj :initPLL.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
 	@echo ".\initPLL.c"
-	$(VDSP)/cc21k.exe -c .\initPLL.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\initPLL.doj -MM
+	$(VDSP)/cc21k.exe -c .\initPLL.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\initPLL.doj -MM
 
-Debug/initSPORT.doj :initSPORT.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
+Release/initSPORT.doj :initSPORT.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
 	@echo ".\initSPORT.c"
-	$(VDSP)/cc21k.exe -c .\initSPORT.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\initSPORT.doj -MM
+	$(VDSP)/cc21k.exe -c .\initSPORT.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\initSPORT.doj -MM
 
-Debug/irqprocess.doj :irqprocess.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h ad1835.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/def21364.h 
+Release/irqprocess.doj :irqprocess.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h ad1835.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/def21364.h 
 	@echo ".\irqprocess.c"
-	$(VDSP)/cc21k.exe -c .\irqprocess.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\irqprocess.doj -MM
+	$(VDSP)/cc21k.exe -c .\irqprocess.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\irqprocess.doj -MM
 
-Debug/main.doj :main.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
+Release/main.doj :main.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h 
 	@echo ".\main.c"
-	$(VDSP)/cc21k.exe -c .\main.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\main.doj -MM
+	$(VDSP)/cc21k.exe -c .\main.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\main.doj -MM
 
-Debug/SPORTisr.doj :SPORTisr.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/stdio.h $(VDSP)/213xx/include/stdio_21xxx.h 
+Release/SPORTisr.doj :SPORTisr.c tt.h $(VDSP)/213xx/include/cdef21364.h $(VDSP)/213xx/include/Cdef21363.h $(VDSP)/213xx/include/def21364.h $(VDSP)/213xx/include/def21363.h $(VDSP)/213xx/include/signal.h $(VDSP)/213xx/include/stdio.h $(VDSP)/213xx/include/stdio_21xxx.h 
 	@echo ".\SPORTisr.c"
-	$(VDSP)/cc21k.exe -c .\SPORTisr.c -file-attr ProjectName=Block\ Based\ TalkThru -g -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Debug\SPORTisr.doj -MM
+	$(VDSP)/cc21k.exe -c .\SPORTisr.c -file-attr ProjectName=Block\ Based\ TalkThru -O -Ov100 -structs-do-not-overlap -no-multiline -double-size-32 -warn-protos -si-revision 0.5 -proc ADSP-21364 -o .\Release\SPORTisr.doj -MM
 
-./Debug/Block\ Based\ TalkThru.dxe :$(VDSP)/213xx/ldf/ADSP-21364.LDF $(VDSP)/213xx/lib/2136x_rev_0.0/364_hdr.doj ./Debug/blockProcess.doj ./Debug/init1835viaSPI.doj ./Debug/initDAI.doj ./Debug/initPLL.doj ./Debug/initSPORT.doj ./Debug/irqprocess.doj ./Debug/main.doj ./Debug/SPORTisr.doj $(VDSP)/213xx/lib/2136x_rev_0.0/libc36x.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libio.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libdsp36x.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libcpp.dlb 
+./Release/Block\ Based\ TalkThru.dxe :$(VDSP)/213xx/ldf/ADSP-21364.LDF $(VDSP)/213xx/lib/2136x_rev_0.0/364_hdr.doj ./Release/blockProcess.doj ./Release/init1835viaSPI.doj ./Release/initDAI.doj ./Release/initPLL.doj ./Release/initSPORT.doj ./Release/irqprocess.doj ./Release/main.doj ./Release/SPORTisr.doj $(VDSP)/213xx/lib/2136x_rev_0.0/libc36x.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libio.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libdsp36x.dlb $(VDSP)/213xx/lib/2136x_rev_0.0/libcpp.dlb 
 	@echo "Linking..."
-	$(VDSP)/cc21k.exe .\Debug\blockProcess.doj .\Debug\init1835viaSPI.doj .\Debug\initDAI.doj .\Debug\initPLL.doj .\Debug\initSPORT.doj .\Debug\irqprocess.doj .\Debug\main.doj .\Debug\SPORTisr.doj -L .\Debug -add-debug-libpaths -flags-link -od,.\Debug -o .\Debug\Block\ Based\ TalkThru.dxe -proc ADSP-21364 -si-revision 0.5 -MM
+	$(VDSP)/cc21k.exe .\Release\blockProcess.doj .\Release\init1835viaSPI.doj .\Release\initDAI.doj .\Release\initPLL.doj .\Release\initSPORT.doj .\Release\irqprocess.doj .\Release\main.doj .\Release\SPORTisr.doj -flags-link -ip -L .\Release -flags-link -e -flags-link -od,.\Release -o .\Release\Block\ Based\ TalkThru.dxe -proc ADSP-21364 -si-revision 0.5 -MM
 
 endif
 
-ifeq ($(MAKECMDGOALS),Block Based TalkThru_Debug_clean)
+ifeq ($(MAKECMDGOALS),Block Based TalkThru_Release_clean)
 
-Block\ Based\ TalkThru_Debug_clean:
-	-$(RM) "Debug\blockProcess.doj"
-	-$(RM) "Debug\init1835viaSPI.doj"
-	-$(RM) "Debug\initDAI.doj"
-	-$(RM) "Debug\initPLL.doj"
-	-$(RM) "Debug\initSPORT.doj"
-	-$(RM) "Debug\irqprocess.doj"
-	-$(RM) "Debug\main.doj"
-	-$(RM) "Debug\SPORTisr.doj"
-	-$(RM) ".\Debug\Block Based TalkThru.dxe"
-	-$(RM) ".\Debug\*.ipa"
-	-$(RM) ".\Debug\*.opa"
-	-$(RM) ".\Debug\*.ti"
-	-$(RM) ".\Debug\*.pgi"
+Block\ Based\ TalkThru_Release_clean:
+	-$(RM) "Release\blockProcess.doj"
+	-$(RM) "Release\init1835viaSPI.doj"
+	-$(RM) "Release\initDAI.doj"
+	-$(RM) "Release\initPLL.doj"
+	-$(RM) "Release\initSPORT.doj"
+	-$(RM) "Release\irqprocess.doj"
+	-$(RM) "Release\main.doj"
+	-$(RM) "Release\SPORTisr.doj"
+	-$(RM) ".\Release\Block Based TalkThru.dxe"
+	-$(RM) ".\Release\*.ipa"
+	-$(RM) ".\Release\*.opa"
+	-$(RM) ".\Release\*.ti"
+	-$(RM) ".\Release\*.pgi"
 	-$(RM) ".\*.rbld"
 
 endif
