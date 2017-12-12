@@ -14,6 +14,7 @@ void SetupIRQ12(void);
 void main(void)
 {
     
+
 	InitPLL ();
 	SetupIRQ12 () ;
     // Need to initialize DAI because the sport signals
@@ -24,7 +25,7 @@ void main(void)
     Init1835viaSPI();
 
     // Finally setup the sport to receive / transmit the data
-    // InitSPORT();
+    InitSPORT();
 
     interrupt (SIG_SP0,TalkThroughISR);
     interrupt (SIG_IRQ1, Irq1ISR) ;

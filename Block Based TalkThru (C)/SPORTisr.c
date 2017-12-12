@@ -45,7 +45,7 @@ int isProcessing=0;
 //If the processing takes too long, the program will be stuck in this infinite loop.
 void ProcessingTooLong()
 {
-    printf("Processing for too much time!");
+    printf("Processing Too Long!!\n");
     while(1);
 }
 

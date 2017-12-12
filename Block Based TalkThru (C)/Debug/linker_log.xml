@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Analog Devices/VisualDSP 5.1.2/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Tue Dec 12 12:27:41 2017
+'>
+<MSG id='036BE0F0' mid='li1021' type='Error' >
+<TEXT><![CDATA[The following symbols referenced in processor 'p0' could not be resolved:
+        'foldback [_foldback]' referenced from '.\Debug\blockProcess.doj']]></TEXT>
+</MSG>
+</DOCUMENT>

@@ -101,8 +101,8 @@
 #define ADC20BIT   (0x0010)  // 20-bit output word length
 #define ADC16BIT   (0x0020)  // 16-bit output word length
 
-// #define ADCMUTER   (0x0002)  // Mute right channel from ADC
-// #define ADCMUTEL   (0x0001)  // Mute right channel from ADC
+#define ADCMUTER   (0x0002)  // Mute right channel from ADC
+#define ADCMUTEL   (0x0001)  // Mute right channel from ADC
 
 //-------------------------------------------------------------------------------
 //  ADC Control 3
