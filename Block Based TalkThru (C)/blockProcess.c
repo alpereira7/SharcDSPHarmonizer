@@ -32,10 +32,7 @@ float distortion(float x, int n){
 }
 
 float absolute(float val){
-    if(val >= 0)
-        return val;
-    else
-        return -1 * val;
+	return (val >= 0) ? val : -val;
 }
 
 float waveshaper(float x_n, float drive){
