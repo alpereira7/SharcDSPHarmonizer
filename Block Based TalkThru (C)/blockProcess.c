@@ -3,17 +3,7 @@
 /* #include <stdlib.h> */
 /* #include <errno.h> */
 /* #include <math.h> */
-
-float exponential(float x, int n)
-{
-    float sum = 1.0f; // initialize sum of series
- 
-    int i = n - 1;
-    for (; i > 0; --i )
-        sum = 1 + x * sum / i;
- 
-    return sum;
-}
+#include "tools.h"
 
 float distortion(float x, int n){
     /* return x; */
@@ -29,10 +19,6 @@ float distortion(float x, int n){
 
     y /= factor;
     return y;
-}
-
-float absolute(float val){
-	return (val >= 0) ? val : -val;
 }
 
 float waveshaper(float x_n, float drive){
